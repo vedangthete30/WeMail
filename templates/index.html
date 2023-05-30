@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navTitle">
+            <a href=#home><img src="{{ url_for('static', filename='img/weMailLogo.png')}}" class="log" alt=""></a>
+            <span class="title"><a href=#home>WeMail</a></span>
+        </div>
+        <div class="navItems">
+            <div class="items"><a href=#home>Home</a></div>
+            <div class="items"><a href=#how>How It Works</a></div>
+            <div class="items"><a href=#format>Format File</a></div>
+            <div class="items"><a href=#start>Start</a></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="home" id="home">
+        <div class="hImg">
+            <img src="{{ url_for('static', filename='img/pg1.png')}}" class="homeImg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <div class="how" id="how">
+        <div class="hoImg">
+            <img src="{{ url_for('static', filename='img/pg2.png')}}" class="howImg" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div class="format" id="format">
+        <div class="for">
+            <img src="{{ url_for('static', filename='img/pg3.png')}}" class="forImg" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="start" id="start">
+        <div class="star">
+            <img src="{{ url_for('static', filename='img/uploadpage.png')}}" class="startImg" alt="">
+        </div>
+        <div class="card">
+                <form class="form" action="/done" method='post' enctype="multipart/form-data">
+                    <div class="userName">
+                        Enter Your Full Name :<input type="text" name="userName" style="height:20px; border:none; border-bottom:1px solid #43c466;" required/>
+                    </div>
+                    <div class="userEmail">
+                        Enter Your Email : <input type="email" name="userEmail" style=" height:20px; border:none; border-bottom:1px solid #43c466;" required/>
+                    </div>
+                    <div class='userSubject'>
+                        Enter you Subject : <input type='text' name="userSubject" style="width:250px; height:20px; border:none; border-bottom:1px solid #43c466;" required/>
+                    </div>
+                    <div class='userMessage'>
+                        Enter your Message : <input type='text' name="userMessage" style="width:250px; height:90px; border:none; border-bottom:1px solid #43c466;" required/>
+                    </div>
+                    <div class='appPass'>
+                        Enter your App Password : <input type='password' name="appPassword" style="width:250px; height:20px; border:none; border-bottom:1px solid #43c466;" required/>
+                        <a href="https://support.google.com/mail/answer/185833?hl=en" style="margin-top:20px; margin-left:20px; color:#43c466; cursor:pointer;">Set your App Password</a>
+                    </div>                    
+                    <div class="fileUpload">
+                        Upload Fiven Format File:
+                       <input name="uploadFile" type="file" value ='download' class="chooseFile" id="fileUp" style="display: none;" required>
+                       
+                        <label for="fileUp"><img src="{{ url_for('static', filename='img/upTransparent.png')}}" class="Up" alt=""></label>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" class="submitBtn"/>
+                    </div>
+                    
+                </form>
+        </div>
+
+       
+    </div>
+
+    
+</body>
+</html>

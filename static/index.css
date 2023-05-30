@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+
+.navbar:hover,.navbar.expanded {
+    width:250px;
+    overflow:visible;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    background:white;
+    height:100%;
+    width:60px;
+    overflow:hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.navTitle{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.log{
+    width: 80px;
+    height: 80px;
+}
+.title{
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.title:hover{
+    transform: scale(1.5);
+}
+.navItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.items:hover{
+    transform: scale(1.5);
+}
+
+.items{
+    transition: all 0.3s ease;
+   margin-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.homeImg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+
+
+
+.how{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.howImg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+
+.format{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.forImg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.start{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.startImg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card{
+    width: 750px;
+    height: 430px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 350px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+}
+
+.form{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userName{
+    margin-top: 40px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.userEmail{
+    margin-top: 40px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.fileUpload{
+    margin-top: 50px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+}
+.submitBtn{
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 60px;
+    width: 550px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #43c466;
+    border: #43c466;
+    color: black;
+    cursor: pointer;
+}
+.submitBtn:hover{
+    background-color: white;
+    color: #43c466;
+    transition: all ease 0.5s;
+}
+
+
+.Up{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.mess{
+    width: 200px;
+    height: 100px;
+}
+
+
+.userSubject{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 750px;
+    display: flex;
+    flex-direction: column;
+}
+.userMessage{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.appPass{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
